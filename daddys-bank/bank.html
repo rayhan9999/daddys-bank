@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="calculator.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <title>calculate</title>
+</head>
+<body class="bg-slate-900 font-mono">
+    <header>
+        <section class="text-center mt-16 px-5">
+            <h1 class="text-white text-5xl font-semibold">Your Nanir bank er <span class="font-bold text-lime-500">Moneeyy</span></h1>
+        </section>
+    </header>
+    <!--  -->
+
+    <main>
+        <section class="flex flex-col lg:flex-row justify-center gap-16 mt-20 px-6">
+            <div class="bg-slate-700 px-20 lg:px-32 py-20 rounded-2xl">
+                <h3 class="text-white text-4xl">Deposit</h3>
+            <p class="text-lime-400 text-5xl">$<span id="deposite-balance">00</span></p>
+            </div>
+            <!--  -->
+            <div class="bg-slate-700 px-20 lg:px-32 py-20 rounded-2xl">
+                <h3 class="text-white text-4xl">Withdraw</h3>
+            <p class="text-lime-400 text-5xl">$<span id="withdraw-balance">00</span></p>
+            </div>
+            <!--  -->
+            <div class="bg-slate-700 px-20 lg:px-32 py-20 rounded-2xl">
+                <h3 class="text-white text-4xl">Balance</h3>
+            <p class="text-lime-400 text-5xl">$<span id="total-balance">220</span></p>
+            </div>
+        </section>
+        <!--  -->
+        <!--  -->
+        <section class="container mx-auto flex flex-col lg:flex-row justify-center lg:justify-center items-center  gap-5 lg:gap-16  mt-20 lg:px-36 px-2">
+            <div class="bg-slate-700 lg:px-40 px-20  py-20 rounded-2xl container ">
+                <h3 class="text-white text-4xl">Deposit</h3>
+            <input type="number" id="deposite" class=" block mt-5 h-12 lg:w-60 rounded-xl px-2" name="" placeholder="$Your deposite amount">
+            <button type="submit" class=" bg-slate-400 mt-5 py-3 px-6 rounded-xl hover:bg-slate-900 hover:text-slate-100" id="btn-1">Deposit</button>
+            </div>
+            
+            <div class="bg-slate-700 lg:px-40 px-20  py-20 rounded-2xl container ">
+                <h3 class="text-white text-4xl">Withdraw</h3>
+            <input type="number" id="withdraw" class=" block mt-5 h-12 lg:w-60 rounded-xl px-2" name="" placeholder="$Your deposite amount">
+            <button type="submit" class=" bg-slate-400 mt-5 py-3 px-6 rounded-xl hover:bg-slate-900 hover:text-slate-100" id="btn-2">Withdraw</button>
+            </div>
+            </section>
+        
+    </main>
+
+    <!--  -->
+    <script src="bank.js"></script>
+</body>
+</html>
